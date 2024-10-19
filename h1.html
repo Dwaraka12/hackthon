@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="c1.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+                    <div class="container">
+                        <a class="navbar-brand" href="#">
+                            <img src="https://res.cloudinary.com/dfxof0u2x/image/upload/v1729278535/logorgm_drsvvt.jpg" class="food-munch-logo" />
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav ml-auto">
+                                <a class="nav-link active" id="navItem1" href="#wcuSection">
+                                    Why Choose Us?
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                                <a class="nav-link" href="#exploreMenuSection" id="navItem2">Student details</a>
+                                <a class="nav-link" href="#deliveryPaymentSection" id="navItem3">Faculty</a>
+                                <a class="nav-link" href="#followUsSection" id="navItem4">Follow Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-12">
+                <div class="main spa">
+                    <h3>Enter your login credentials</h3>
+                    <form action="">
+                        <label for="first">
+                            Register number:
+                        </label>
+                        <input type="text" id="first" name="first" placeholder="Enter your Username" required>
+                        <label for="password">
+                            Password:
+                        </label>
+                        <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+                        <div class="wrap">
+                            <button class="but" type="submit">
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                    <p>Not registered?
+                        <a href="#" style="text-decoration: none;">
+                            Create an account
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="cent mt-3">
+            <h1 class="t1">If don't have credentials click here for Course and Faculty details</h1>
+            <button class=" t2 btn btn-primary" onclick="display('sectionFavouritePlaces')">Come On Click</button>
+        </div>
+        <header>
+            <h1>Course Selection Portal</h1>
+          </header>
+    
+          <!-- Student Info -->
+          <section class="student-info">
+            <h2>Welcome, [Student Name]</h2>
+            <p>Semester: 5</p>
+          </section>
+    
+          <!-- Course Selection -->
+          <section class="course-selection">
+            <h3>Select Your Courses</h3>
+    
+            <div id="course-list">
+              <div class="course" data-type="theory">
+                <h4>Course: Data Structures (Theory)</h4>
+                <p>Select a teacher:</p>
+                <select>
+                  <option value="teacher1">Dr. A. Smith (4.5/5 Rating)</option>
+                  <option value="teacher2">Prof. B. Johnson (4.2/5 Rating)</option>
+                </select>
+              </div>
+    
+              <div class="course" data-type="theory">
+                <h4>Course: Operating Systems (Theory)</h4>
+                <p>Select a teacher:</p>
+                <select>
+                  <option value="teacher3">Dr. C. Lee (4.7/5 Rating)</option>
+                  <option value="teacher4">Prof. D. Adams (4.3/5 Rating)</option>
+                </select>
+              </div>
+    
+              <div class="course" data-type="lab">
+                <h4>Course: Web Development (Lab)</h4>
+                <p>Select a teacher:</p>
+                <select>
+                  <option value="teacher5">Dr. F. Green (4.8/5 Rating)</option>
+                  <option value="teacher6">Prof. G. Black (4.6/5 Rating)</option>
+                </select>
+              </div>
+    
+              <div class="course" data-type="theory">
+                <h4>Course: Database Management (Theory)</h4>
+                <p>Select a teacher:</p>
+                <select>
+                  <option value="teacher7">Prof. H. White (4.0/5 Rating)</option>
+                  <option value="teacher8">Dr. I. Brown (4.5/5 Rating)</option>
+                </select>
+              </div>
+    
+              <div class="course" data-type="lab">
+                <h4>Course: Computer Networks Lab</h4>
+                <p>Select a teacher:</p>
+                <select>
+                  <option value="teacher9">Dr. J. Blue (4.6/5 Rating)</option>
+                  <option value="teacher10">Prof. K. Red (4.2/5 Rating)</option>
+                </select>
+              </div>
+            </div>
+    
+            <button type="submit" id="submit-btn">Submit Selections</button>
+          </section>
+    
+          <!-- Feedback Section -->
+          <section class="feedback-section">
+            <h3>Submit Feedback for Previous Courses</h3>
+            <div class="feedback">
+              <p>Course: Computer Networks</p>
+              <label for="rating">Rate the Teacher: </label>
+              <input type="number" id="rating" name="rating" min="1" max="5" />
+              <textarea placeholder="Leave your feedback here..."></textarea>
+            </div>
+            <button type="submit">Submit Feedback</button>
+          </section>
+        </div>
+    
+    </div>
+</body>
+
+</html>
